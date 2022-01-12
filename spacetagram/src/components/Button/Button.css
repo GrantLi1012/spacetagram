@@ -1,0 +1,37 @@
+:root {
+    --primary: rgba(128, 128, 128, 0.63);
+}
+
+.btn {
+    margin: 2px 15px 2px 0;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+    color: white;
+    padding: 0;
+    padding: 7px 15px;
+    font-size: 17px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 5px;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.primary {
+    background-color: rgba(28, 152, 224, 0.74);
+    color: white;
+}
+
+.liked {
+    background-color: rgb(240, 128, 147);
+    color: white;
+}
