@@ -8,11 +8,7 @@ export const PictureBox = ({image, title, date, text}) => {
     const handleLikeClick = () => {
         setLike(!like);
     }
-
-    const handleShareClick = () => {
-        console.log('share button clicked');
-    }
-
+    
     useEffect(() => {
         setLike(JSON.parse(window.localStorage.getItem('like-' + title)));
     }, []);
