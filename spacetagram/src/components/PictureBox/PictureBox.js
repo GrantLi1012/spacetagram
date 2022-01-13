@@ -8,14 +8,14 @@ export const PictureBox = ({image, title, date, text}) => {
     const handleLikeClick = () => {
         setLike(!like);
     }
-    
+
     useEffect(() => {
         setLike(JSON.parse(window.localStorage.getItem('like-' + title)));
-    }, []);
+    }, [title]);
 
     useEffect(() => {
         window.localStorage.setItem('like-' + title, like);
-    }, [like]);
+    }, [like,title]);
 
     return (
         <div className='pic-box-container'>
