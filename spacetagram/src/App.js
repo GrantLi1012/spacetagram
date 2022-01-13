@@ -1,7 +1,5 @@
 import { useEffect, useState } from 'react';
 import planetLogo from './img/planetIcon.svg';
-import space1 from './img/space1.jpg';
-import space2 from './img/space2.jpg';
 import { PictureBox } from './components/PictureBox/PictureBox';
 import './App.css';
 

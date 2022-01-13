@@ -46,7 +46,6 @@
 }
 
 .pic-box-btns {
-    padding: 10px 0 0 15px;
-    position: absolute;
-    z-index: 2;
+    padding: 5px 0 3px 15px;
+    display: flex;
 }
