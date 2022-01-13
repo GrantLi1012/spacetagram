@@ -5,8 +5,8 @@ import './App.css';
 
 function App() {
   const API_KEY = '8iqFrhDoaPPaeRWEVsu3Z3rFm0kACPa2bgLlKcRa';
-  const DATE_START = '2019-09-17';
-  const DATE_END = '2019-09-27';
+  const DATE_START = '2019-06-05';
+  const DATE_END = '2019-06-17';
   const [apodData, setApodData] = useState('');
 
   function getApodData() {

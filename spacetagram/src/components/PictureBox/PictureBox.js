@@ -26,11 +26,7 @@ export const PictureBox = ({image, title, date, text}) => {
             <div className='pic-box-img'>
                 <img className="img-fit" src={image} alt='pic' />
             </div>
-            <div className='pic-box-btns'>
-                <Button onClick={ handleLikeClick } 
-                        text={ like ? 'Liked' : 'Like' } 
-                        buttonColor={ like ? 'liked' : 'primary'} />
-            </div>
+            
             <div className='pic-box-text-container'>
                 <div className='pic-box-title'>
                     {title}
@@ -41,6 +37,12 @@ export const PictureBox = ({image, title, date, text}) => {
                 <div className='pic-box-text'>
                     {text}
                 </div>
+            </div>
+
+            <div className='pic-box-btns'>
+                <Button onClick={ handleLikeClick } 
+                        text={ like ? 'Liked' : 'Like' } 
+                        buttonColor={ like ? 'liked' : 'primary'} />
             </div>
 
         </div>
