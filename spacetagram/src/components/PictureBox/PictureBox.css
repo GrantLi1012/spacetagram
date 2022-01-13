@@ -4,17 +4,17 @@
     padding: 0 0 5px 0;
     box-shadow: rgba(0, 0, 0, 0.61) 0px 0px 10px;
     border-radius: 5px;
-    display: flex;
-    flex-direction: row;
     justify-content: left;
-    align-items: center;
     flex-wrap: wrap;
     width: 100%;
     overflow: hidden;
+    display: flex;
+    align-content: flex-start;
 }
 
 .pic-box-img {
     width: 100%;
+    height: fit-content;
     object-fit: cover;
 }
 
@@ -22,13 +22,31 @@
     max-width:100%;
 }
 
-.pic-box-text {
+.pic-box-text-container {
     padding: 0 15px 10px 15px;
-    font-size: calc(10px + 1vmin);
     color: black;
+    flex-grow: 1;
+    margin-top: auto;
     text-align: left;
 }
 
+.pic-box-title {
+    font-size: calc(10px + 1vmin);
+    font-weight: bold;
+}
+
+.pic-box-date {
+    font-size: calc(8px + 1vmin);
+    color: grey;
+}
+
+.pic-box-text {
+    font-size: calc(6px + 1vmin);
+    color: black;
+}
+
 .pic-box-btns {
-    padding-left: 15px;
+    padding: 10px 0 0 15px;
+    position: absolute;
+    z-index: 2;
 }

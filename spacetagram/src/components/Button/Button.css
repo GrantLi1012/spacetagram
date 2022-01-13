@@ -3,31 +3,28 @@
 }
 
 .btn {
-    margin: 2px 15px 2px 0;
+    margin: 4px 20px 4px 0;
     border-radius: 4px;
-    outline: none;
-    border: none;
     cursor: pointer;
     white-space: nowrap;
     color: white;
-    padding: 0;
-    padding: 7px 15px;
+    padding: 8px 17px;
     font-size: 17px;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 5px;
 }
 
 .btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.4);
 }
 
 .btn:active {
     transform: translateY(-1px);
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 10px rgba(255, 255, 255, 0.4);
 }
 
 .primary {
-    background-color: rgba(28, 152, 224, 0.74);
+    background-color: rgb(59, 171, 236);
     color: white;
 }
 

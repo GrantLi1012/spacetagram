@@ -7,6 +7,7 @@
   margin-right: 2vw;
   height: 5vh;
   pointer-events: none;
+  filter:invert(1);
 }
 
 .header {
@@ -32,11 +33,22 @@
 .body {
   background-color: rgba(128, 128, 128, 0.26);
   padding: 1vw 3vw 3vw 3vw;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  flex-direction: row;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto;
+  grid-column-gap: 15px;
+}
+
+@media only screen and (min-width: 840px) {
+  .grid {
+    grid-template-columns: auto auto;
+    grid-column-gap: 15px;
+  }
 }
 
 .App-link {
